@@ -1,0 +1,48 @@
+{
+  "name": "hh-auto-bump",
+  "version": "1.0.0",
+  "description": "Script to auto-bump resume at hh.ru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-syco/hh-auto-bump.git"
+  },
+  "scripts": {
+    "start": "ts-node ./src/main.ts",
+    "test": "ENV=test mocha --require ts-node/register 'tests/*.test.ts'",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/dev-syco/hh-auto-bump/issues"
+  },
+  "type": "commonjs",
+  "author": "Pavel Kornienko",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://github.com/dev-syco/hh-auto-bump",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@inquirer/prompts": "^3.3.0",
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^20.10.7",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "axios": "^1.6.5",
+    "chalk": "4.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "chai": "4.4.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4",
+    "sinon": "^17.0.1"
+  }
+}
